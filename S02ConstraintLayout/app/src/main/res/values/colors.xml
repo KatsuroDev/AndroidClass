@@ -10,4 +10,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="gray">#9C9797</color>
     <color name="orange">#FF9800</color>
+    <color name="fuel_town">#576574</color>
+    <color name="double_dragon_skin">#FF9F42</color>
 </resources>
