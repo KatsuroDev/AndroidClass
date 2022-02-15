@@ -24,13 +24,17 @@ data class Pilot(var name: String, var life: Int, var cube: Int = 0) {
 
     fun canFly() : Boolean
     {
-        return life > 0 && energy > 0
+        return life > 0 && energy > 0 && shield > 0
     }
 
     fun recharge()
     {
         //TODO: Add microtransaction
-        energy = 7
-
+        if(energy <= 0)
+            energy = 7
+        if(life <= 0)
+            life = 10
+        if(shield <= 0)
+            shield = 5
     }
 }

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.pilot.PilotActivity">
+
+    <ImageView
+        android:id="@+id/imvPilotExercice"
+        android:layout_width="112dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pilot06" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/imvShield"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/txvPilotName"
+        app:layout_constraintTop_toTopOf="@+id/txvPilotName"
+        app:srcCompat="@drawable/life" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Energy"
+        app:layout_constraintEnd_toEndOf="@+id/txvEnergy"
+        app:layout_constraintStart_toStartOf="@+id/txvEnergy"
+        app:layout_constraintTop_toBottomOf="@+id/txvEnergy" />
+
+    <ImageView
+        android:id="@+id/imvEnergy"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imvShield"
+        app:layout_constraintTop_toTopOf="@+id/imvShield"
+        app:srcCompat="@drawable/energy" />
+
+    <TextView
+        android:id="@+id/txvShield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imvEnergy"
+        app:layout_constraintStart_toStartOf="@+id/imvShield"
+        app:layout_constraintTop_toBottomOf="@+id/imvShield"
+        tools:text="5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imvEnergy"
+        app:layout_constraintTop_toTopOf="@+id/imvEnergy"
+        app:srcCompat="@drawable/cube" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Cube"
+        app:layout_constraintEnd_toEndOf="@+id/txvCube"
+        app:layout_constraintStart_toStartOf="@+id/txvCube"
+        app:layout_constraintTop_toBottomOf="@+id/txvCube" />
+
+    <TextView
+        android:id="@+id/txvLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Shield"
+        app:layout_constraintEnd_toEndOf="@+id/txvShield"
+        app:layout_constraintStart_toStartOf="@+id/txvShield"
+        app:layout_constraintTop_toBottomOf="@+id/txvShield" />
+
+    <TextView
+        android:id="@+id/txvCube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:text="0" />
+
+    <ImageView
+        android:id="@+id/imvShield"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/imvEnergy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/shield" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Life"
+        app:layout_constraintEnd_toEndOf="@+id/txvLife"
+        app:layout_constraintStart_toStartOf="@+id/txvLife"
+        app:layout_constraintTop_toBottomOf="@+id/txvLife" />
+
+    <TextView
+        android:id="@+id/txvEnergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/imvEnergy"
+        app:layout_constraintStart_toStartOf="@+id/imvEnergy"
+        app:layout_constraintTop_toBottomOf="@+id/imvEnergy"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/txvPilotName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imvPilotExercice"
+        app:layout_constraintTop_toTopOf="@+id/imvPilotExercice"
+        tools:text="Yiznik" />
+
+    <TextView
+        android:id="@+id/txvLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/txvPilotName"
+        app:layout_constraintStart_toEndOf="@+id/imvPilotExercice"
+        app:layout_constraintTop_toBottomOf="@+id/txvPilotName"
+        tools:text="Level 0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="28dp"
+        android:text="Revolution"
+        app:layout_constraintBottom_toTopOf="@+id/sldRevolution"
+        app:layout_constraintEnd_toEndOf="@+id/imvPilotExercice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imvPilotExercice"
+        app:layout_constraintTop_toBottomOf="@+id/imvPilotExercice"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldRevolution"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:rotation="0"
+        android:stepSize="1.0"
+        android:value="3.0"
+        android:valueFrom="1.0"
+        android:valueTo="5.0"
+        app:layout_constraintBottom_toTopOf="@+id/swtTraining"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Switch
+        android:id="@+id/swtTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Training"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/sldRevolution" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imvPlanet"
+        app:layout_constraintTop_toTopOf="@+id/imvPlanet" />
+
+    <ImageView
+        android:id="@+id/imvPlanet"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sldRevolution"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/planet" />
+
+    <ImageView
+        android:id="@+id/imvRocket"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintCircle="@id/imvPlanet"
+        app:layout_constraintCircleAngle="55"
+        app:layout_constraintCircleRadius="95dp"
+        app:srcCompat="@drawable/rocket" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="188dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,7 @@
     <string name="app_name">S02 Constraint Layout</string>
     <string name="warehouse">Entrepôt</string>
     <string name="lblShort">Un mot vraiment long</string>
+    <string name="level">Niveau %d</string>
+    <string name="low_resources">Énergie, vie ou bouclier bas</string>
+    <string name="insert_coin">Continuer</string>
 </resources>

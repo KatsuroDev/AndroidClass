@@ -3,4 +3,7 @@
     <string name="warehouse">Warehouse</string>
     <string name="lblShort">Short</string>
     <string name="lorem" translatable="false">Cras at felis sit amet ante aliquet consectetur quis at enim. Duis dapibus feugiat diam, sed maximus ex pellentesque eget. Vestibulum arcu tellus, tincidunt id eros eget, egestas lacinia lorem. Curabitur imperdiet mollis nibh ac blandit. Curabitur id diam velit. Integer sodales ante in massa vulputate, ac iaculis ex convallis. Pellentesque ullamcorper dui quis lacus dapibus placerat in quis nulla. Donec ex orci, sagittis accumsan gravida a, malesuada in nunc. Nullam a blandit mi, ac dapibus sapien. Etiam eleifend dapibus libero. Etiam id volutpat ligula. Suspendisse at massa eu risus tempus pretium id a nunc. Aenean condimentum mi non orci porttitor, in fringilla sem tincidunt. Aenean finibus lectus eu massa vulputate sagittis sed eget elit. In vel scelerisque dolor. Nullam suscipit massa ac consectetur placerat.</string>
+    <string name="level">Level %d</string>
+    <string name="low_resources">Low energy, life or shield</string>
+    <string name="insert_coin">Continue</string>
 </resources>
