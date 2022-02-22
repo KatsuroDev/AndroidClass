@@ -13,7 +13,7 @@ class MainViewModel : ViewModel() {
 
     fun calculate(subtotal:Double, tips: Int)
     {
-        _tipsCalculation.value = TipsCalculation(subtotal, tips / Constants.PERCENT as Float)
+        _tipsCalculation.value = TipsCalculation(subtotal, (tips.toFloat() / Constants.PERCENT))
     }
 
 }
