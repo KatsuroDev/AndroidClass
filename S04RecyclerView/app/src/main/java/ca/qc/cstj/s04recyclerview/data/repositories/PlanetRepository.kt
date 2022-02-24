@@ -6,7 +6,7 @@ import kotlin.random.Random
 class PlanetRepository {
 
     fun retrievePlanets() : List<Planet> {
-        val numberToGenerate = Random.nextInt(5, 21)
+        val numberToGenerate = Random.nextInt(500, 501)
         val planets = mutableListOf<Planet>()
 
         for(i in 0..numberToGenerate)
