@@ -30,8 +30,7 @@ class ContactRecyclerViewAdapter(var contacts: List<Contact>)
         {
             with(binding)
             {
-                val name = "${contact.firstName} ${contact.lastName}"
-                txvName.text = name
+                txvName.text = contact.fullName
                 if(contact.isOnline)
                     imvIsOnline.setImageResource(R.drawable.ic_baseline_cloud_24)
                 else
