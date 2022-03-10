@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">S05 LocalDataSource</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="save">Save</string>
+    <string name="online">Online</string>
+    <string name="open">Open</string>
 </resources>

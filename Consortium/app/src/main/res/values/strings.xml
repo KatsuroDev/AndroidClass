@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Consortium</string>
+    <string name="tinHint">Trader\'s name</string>
+    <string name="UploadBtnText">Upload</string>
+    <string name="LoadBtnText">Load</string>
+    <string name="OpenBtnText">Open</string>
+</resources>
