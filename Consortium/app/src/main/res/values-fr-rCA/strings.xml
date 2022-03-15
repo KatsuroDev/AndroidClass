@@ -2,4 +2,8 @@
 <resources>
     <string name="app_name">Consortium</string>
     <string name="tinHint">Nom du commerçant</string>
+    <string name="OpenBtnText">Ouvrir</string>
+    <string name="logoDescription">logo</string>
+    <string name="LoadBtnText">Remplir</string>
+    <string name="UploadBtnText">Téléverser</string>
 </resources>

@@ -159,7 +159,7 @@
         app:srcCompat="@drawable/singapore" /> -->
 
 
-    <!--<TextView
+    <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -194,8 +194,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="end"
-        app:constraint_referenced_ids="textView12,textView13" /> -->
+        app:constraint_referenced_ids="textView12,textView13" />
 
+    <!--
     <Button
         android:visibility="gone"
         android:id="@+id/button2"
@@ -225,5 +226,5 @@
         android:layout_marginStart="8dp"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
+        app:layout_constraintTop_toTopOf="@+id/button3" /> -->
 </androidx.constraintlayout.widget.ConstraintLayout>

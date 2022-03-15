@@ -7,6 +7,7 @@
     tools:context=".SplashActivity">
 
     <ImageView
+        android:contentDescription="@string/logoDescription"
         android:id="@+id/imvIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,7 +34,8 @@
             tools:text="Yannick" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,23 +43,27 @@
         android:text="@string/UploadBtnText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:icon="@drawable/ic_baseline_backup_24"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLoad"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/LoadBtnText"
         app:layout_constraintBottom_toTopOf="@+id/btnUpload"
         app:layout_constraintEnd_toEndOf="@+id/btnUpload"
-        app:layout_constraintStart_toStartOf="@+id/btnUpload" />
+        app:layout_constraintStart_toStartOf="@+id/btnUpload"
+        app:icon="@drawable/ic_baseline_loop_24"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnOpen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/OpenBtnText"
         app:layout_constraintBottom_toTopOf="@+id/btnLoad"
         app:layout_constraintEnd_toEndOf="@+id/btnLoad"
-        app:layout_constraintStart_toStartOf="@+id/btnLoad" />
+        app:layout_constraintStart_toStartOf="@+id/btnLoad"
+        app:icon="@drawable/ic_baseline_door_sliding_24"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

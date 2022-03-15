@@ -4,4 +4,5 @@
     <string name="UploadBtnText">Upload</string>
     <string name="LoadBtnText">Load</string>
     <string name="OpenBtnText">Open</string>
+    <string name="logoDescription">logo</string>
 </resources>
