@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.NewDeliveryActivity">
+
+    <TextView
+        android:id="@+id/txvDeliveryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/deliveryTitle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Z -->
+    <ImageView
+        android:id="@+id/imvElementZ"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvDeliveryTitle"
+        app:srcCompat="@drawable/z" />
+
+    <TextView
+        android:id="@+id/txvElementZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zElement"
+        app:layout_constraintEnd_toEndOf="@+id/imvElementZ"
+        app:layout_constraintStart_toStartOf="@+id/imvElementZ"
+        app:layout_constraintTop_toBottomOf="@+id/imvElementZ" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldElementZ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementZ"
+        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementZ"
+        app:layout_constraintStart_toEndOf="@+id/imvElementZ"
+        app:layout_constraintTop_toTopOf="@+id/imvElementZ" />
+
+    <TextView
+        android:id="@+id/txvAmountElementZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvElementZ"
+        tools:text="200.0" />
+
+    <!-- Wu -->
+
+    <ImageView
+        android:id="@+id/imvElementWu"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvElementZ"
+        app:srcCompat="@drawable/wu" />
+
+    <TextView
+        android:id="@+id/txvElementWu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wuElement"
+        app:layout_constraintEnd_toEndOf="@+id/imvElementWu"
+        app:layout_constraintStart_toStartOf="@+id/imvElementWu"
+        app:layout_constraintTop_toBottomOf="@+id/imvElementWu" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldElementWu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementWu"
+        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementWu"
+        app:layout_constraintStart_toEndOf="@+id/imvElementWu"
+        app:layout_constraintTop_toTopOf="@+id/imvElementWu" />
+
+    <TextView
+        android:id="@+id/txvAmountElementWu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementWu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvElementWu"
+        tools:text="200.0" />
+
+    <!-- Ja -->
+
+    <ImageView
+        android:id="@+id/imvElementJa"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvElementWu"
+        app:srcCompat="@drawable/ja" />
+
+    <TextView
+        android:id="@+id/txvElementJa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jaElement"
+        app:layout_constraintEnd_toEndOf="@+id/imvElementJa"
+        app:layout_constraintStart_toStartOf="@+id/imvElementJa"
+        app:layout_constraintTop_toBottomOf="@+id/imvElementJa" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldElementJa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementJa"
+        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementJa"
+        app:layout_constraintStart_toEndOf="@+id/imvElementJa"
+        app:layout_constraintTop_toTopOf="@+id/imvElementJa" />
+
+    <TextView
+        android:id="@+id/txvAmountElementJa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementJa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvElementJa"
+        tools:text="200.0" />
+
+    <!-- I -->
+
+    <ImageView
+        android:id="@+id/imvElementI"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvElementJa"
+        app:srcCompat="@drawable/i" />
+
+    <TextView
+        android:id="@+id/txvElementI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iElement"
+        app:layout_constraintEnd_toEndOf="@+id/imvElementI"
+        app:layout_constraintStart_toStartOf="@+id/imvElementI"
+        app:layout_constraintTop_toBottomOf="@+id/imvElementI" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldElementI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementI"
+        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementI"
+        app:layout_constraintStart_toEndOf="@+id/imvElementI"
+        app:layout_constraintTop_toTopOf="@+id/imvElementI" />
+
+    <TextView
+        android:id="@+id/txvAmountElementI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvElementI"
+        tools:text="200.0" />
+
+    <!-- B -->
+
+    <ImageView
+        android:id="@+id/imvElementB"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvElementI"
+        app:srcCompat="@drawable/b" />
+
+    <TextView
+        android:id="@+id/txvElementB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bElement"
+        app:layout_constraintEnd_toEndOf="@+id/imvElementB"
+        app:layout_constraintStart_toStartOf="@+id/imvElementB"
+        app:layout_constraintTop_toBottomOf="@+id/imvElementB" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldElementB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementB"
+        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementB"
+        app:layout_constraintStart_toEndOf="@+id/imvElementB"
+        app:layout_constraintTop_toTopOf="@+id/imvElementB" />
+
+    <TextView
+        android:id="@+id/txvAmountElementB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imvElementB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvElementB"
+        tools:text="200.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSaveDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_save_24"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

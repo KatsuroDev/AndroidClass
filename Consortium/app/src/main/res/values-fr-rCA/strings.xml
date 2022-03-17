@@ -4,6 +4,8 @@
     <string name="tinHint">Nom du commerçant</string>
     <string name="OpenBtnText">Ouvrir</string>
     <string name="logoDescription">logo</string>
-    <string name="LoadBtnText">Remplir</string>
+    <string name="LoadBtnText">Chargement</string>
     <string name="UploadBtnText">Téléverser</string>
+    <string name="welcomeMessage">Bon retour, %s !</string>
+    <string name="deliveryTitle">Livraison</string>
 </resources>

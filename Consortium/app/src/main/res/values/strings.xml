@@ -5,4 +5,11 @@
     <string name="LoadBtnText">Load</string>
     <string name="OpenBtnText">Open</string>
     <string name="logoDescription">logo</string>
+    <string name="welcomeMessage">Welcome back, $s!</string>
+    <string name="deliveryTitle">Delivery</string>
+    <string name="zElement" translatable="false">Z</string>
+    <string name="wuElement" translatable="false">Wu</string>
+    <string name="jaElement" translatable="false">Ja</string>
+    <string name="iElement" translatable="false">I</string>
+    <string name="bElement" translatable="false">B</string>
 </resources>

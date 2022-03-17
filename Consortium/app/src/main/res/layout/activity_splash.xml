@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".presentation.ui.splash.SplashActivity">
 
     <ImageView
         android:contentDescription="@string/logoDescription"
@@ -34,17 +34,16 @@
             tools:text="Yannick" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnUpload"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/UploadBtnText"
+        app:icon="@drawable/ic_baseline_backup_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:icon="@drawable/ic_baseline_backup_24"/>
+        app:layout_constraintEnd_toEndOf="@+id/imvIcon"
+        app:layout_constraintStart_toStartOf="@+id/imvIcon" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLoad"
@@ -65,5 +64,127 @@
         app:layout_constraintEnd_toEndOf="@+id/btnLoad"
         app:layout_constraintStart_toStartOf="@+id/btnLoad"
         app:icon="@drawable/ic_baseline_door_sliding_24"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/imvZuscum"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imvWusnyx"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/z" />
+
+            <ImageView
+                android:id="@+id/imvWusnyx"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:layout_constraintEnd_toStartOf="@+id/imvJasmalt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imvZuscum"
+                app:layout_constraintTop_toTopOf="@+id/imvZuscum"
+                app:srcCompat="@drawable/wu" />
+
+            <ImageView
+                android:id="@+id/imvJasmalt"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:layout_constraintEnd_toStartOf="@+id/imvIaspyx"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imvWusnyx"
+                app:layout_constraintTop_toTopOf="@+id/imvZuscum"
+                app:srcCompat="@drawable/ja" />
+
+            <ImageView
+                android:id="@+id/imvIaspyx"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:layout_constraintEnd_toStartOf="@+id/imvBlierium"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imvJasmalt"
+                app:layout_constraintTop_toTopOf="@+id/imvZuscum"
+                app:srcCompat="@drawable/i" />
+
+            <ImageView
+                android:id="@+id/imvBlierium"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imvIaspyx"
+                app:layout_constraintTop_toTopOf="@+id/imvZuscum"
+                app:srcCompat="@drawable/b" />
+
+            <TextView
+                android:id="@+id/txvZuscum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvZuscum"
+                app:layout_constraintStart_toStartOf="@+id/imvZuscum"
+                app:layout_constraintTop_toBottomOf="@+id/imvZuscum"
+                tools:text="200.0" />
+
+            <TextView
+                android:id="@+id/txvWusnyx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvWusnyx"
+                app:layout_constraintStart_toStartOf="@+id/imvWusnyx"
+                app:layout_constraintTop_toBottomOf="@+id/imvWusnyx"
+                tools:text="200.0" />
+
+            <TextView
+                android:id="@+id/txvJasmalt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvJasmalt"
+                app:layout_constraintStart_toStartOf="@+id/imvJasmalt"
+                app:layout_constraintTop_toBottomOf="@+id/imvJasmalt"
+                tools:text="200.0" />
+
+            <TextView
+                android:id="@+id/txvIaspyx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvIaspyx"
+                app:layout_constraintStart_toStartOf="@+id/imvIaspyx"
+                app:layout_constraintTop_toBottomOf="@+id/imvIaspyx"
+                tools:text="200.0" />
+
+            <TextView
+                android:id="@+id/txvBillerium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvBlierium"
+                app:layout_constraintStart_toStartOf="@+id/imvBlierium"
+                app:layout_constraintTop_toBottomOf="@+id/imvBlierium"
+                tools:text="200.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
