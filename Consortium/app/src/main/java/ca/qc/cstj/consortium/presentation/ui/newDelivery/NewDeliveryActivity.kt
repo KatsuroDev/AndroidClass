@@ -1,7 +1,7 @@
-package ca.qc.cstj.consortium.presentation.ui
+package ca.qc.cstj.consortium.presentation.ui.newDelivery
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import ca.qc.cstj.consortium.R
 
 class NewDeliveryActivity : AppCompatActivity() {

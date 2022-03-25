@@ -17,16 +17,17 @@
         tools:text="Welcome back, Yannick" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvDeliveries"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        tools:listitem="@layout/item_delivery"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvWelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/txvWelcome"
+        tools:listitem="@layout/item_delivery" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAddDelivery"

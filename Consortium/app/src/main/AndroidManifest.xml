@@ -10,13 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Consortium">
         <activity
-            android:name=".presentation.ui.NewDeliveryActivity"
+            android:name=".presentation.ui.newDelivery.NewDeliveryActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".presentation.ui.deliveries.DeliveriesActivity"
@@ -24,7 +20,11 @@
         <activity
             android:name=".presentation.ui.splash.SplashActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
