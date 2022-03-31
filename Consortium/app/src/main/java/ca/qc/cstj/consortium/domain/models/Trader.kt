@@ -12,7 +12,6 @@ data class Trader(val name: String,
 {
     fun load()
     {
-        println("hehehehhe")
         zuscum += Random.nextDouble(50.0, 201.0).toFloat()
         wusnyx += Random.nextDouble(50.0, 201.0).toFloat()
         jasmalt += Random.nextDouble(50.0, 201.0).toFloat()

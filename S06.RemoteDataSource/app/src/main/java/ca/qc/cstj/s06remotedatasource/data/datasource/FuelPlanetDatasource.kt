@@ -25,7 +25,7 @@ class FuelPlanetDatasource {
                     for(i in 0 until planetsJson.length()) {
                         planets.add(deserializePlanet(planetsJson.getJSONObject(i)))
                     }
-                    planets
+                    return@withContext planets
                 }
                 // 400 codes
                 is Result.Failure -> {

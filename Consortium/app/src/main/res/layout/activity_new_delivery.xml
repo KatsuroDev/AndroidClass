@@ -43,7 +43,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imvElementZ"
         app:layout_constraintEnd_toStartOf="@+id/txvAmountElementZ"
         app:layout_constraintStart_toEndOf="@+id/imvElementZ"
-        app:layout_constraintTop_toTopOf="@+id/imvElementZ" />
+        app:layout_constraintTop_toTopOf="@+id/imvElementZ"
+        android:valueTo="500"/>
 
     <TextView
         android:id="@+id/txvAmountElementZ"

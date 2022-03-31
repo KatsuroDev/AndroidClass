@@ -36,7 +36,12 @@ class SplashActivity : AppCompatActivity() {
 
         binding.btnOpen.setOnClickListener {
             if(binding.tilTraderName.text.isNotEmpty()){
-                viewModel.save(Trader(binding.tilTraderName.text))
+                viewModel.save(Trader(binding.tilTraderName.text,
+                    viewModel.trader.value!!.zuscum,
+                    viewModel.trader.value!!.wusnyx,
+                    viewModel.trader.value!!.jasmalt,
+                    viewModel.trader.value!!.iaspyx,
+                    viewModel.trader.value!!.blierium))
                 startActivity(DeliveriesActivity.newIntent(this, binding.tilTraderName.text))
             }
             else

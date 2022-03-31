@@ -10,6 +10,7 @@ import ca.qc.cstj.consortium.R
 import ca.qc.cstj.consortium.core.notifyAllItemChange
 import ca.qc.cstj.consortium.databinding.ActivityDeliveriesBinding
 import ca.qc.cstj.consortium.presentation.adapters.DeliveryRecyclerViewAdapter
+import ca.qc.cstj.consortium.presentation.ui.newDelivery.NewDeliveryActivity
 
 class DeliveriesActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDeliveriesBinding
@@ -34,7 +35,7 @@ class DeliveriesActivity : AppCompatActivity() {
         }
 
         binding.btnAddDelivery.setOnClickListener {
-            viewModel.addRandomDelivery()
+            startActivity(NewDeliveryActivity.newIntent(this))
         }
     }
     companion object {
