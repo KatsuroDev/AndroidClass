@@ -14,4 +14,6 @@
     <string name="bElement" translatable="false">B</string>
     <string name="emptyTraderNameError">Trader\'s name can\'t be empty</string>
     <string name="deliveryUploadedMessage">Deliveries uploaded</string>
+    <string name="deliveryCreation">Delivery created!</string>
+    <string name="emptyDeliveryError">Delivery can\'t be empty</string>
 </resources>

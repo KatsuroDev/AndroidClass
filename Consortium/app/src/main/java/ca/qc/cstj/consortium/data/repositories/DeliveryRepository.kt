@@ -1,6 +1,7 @@
 package ca.qc.cstj.consortium.data.repositories
 
 import androidx.room.*
+import ca.qc.cstj.consortium.core.Constants
 import ca.qc.cstj.consortium.domain.models.Delivery
 import kotlinx.coroutines.flow.Flow
 import kotlin.random.Random
@@ -16,11 +17,11 @@ interface DeliveryRepository {
 
     fun newDelivery() : Delivery {
         return Delivery(
-            Random.nextDouble(0.0, 300.0).toFloat(),
-            Random.nextDouble(0.0, 300.0).toFloat(),
-            Random.nextDouble(0.0, 300.0).toFloat(),
-            Random.nextDouble(0.0, 300.0).toFloat(),
-            Random.nextDouble(0.0, 300.0).toFloat(),
+            Random.nextDouble(0.0, Constants.randomElementAmount).toFloat(),
+            Random.nextDouble(0.0, Constants.randomElementAmount).toFloat(),
+            Random.nextDouble(0.0, Constants.randomElementAmount).toFloat(),
+            Random.nextDouble(0.0, Constants.randomElementAmount).toFloat(),
+            Random.nextDouble(0.0, Constants.randomElementAmount).toFloat()
         )
     }
 }

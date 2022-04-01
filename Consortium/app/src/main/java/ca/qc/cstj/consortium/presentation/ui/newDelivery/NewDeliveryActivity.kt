@@ -3,12 +3,14 @@ package ca.qc.cstj.consortium.presentation.ui.newDelivery
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import ca.qc.cstj.consortium.R
 import ca.qc.cstj.consortium.core.Formatter
 import ca.qc.cstj.consortium.databinding.ActivityNewDeliveryBinding
 import ca.qc.cstj.consortium.presentation.ui.deliveries.DeliveriesActivity
+import com.google.android.material.snackbar.Snackbar
 
 class NewDeliveryActivity : AppCompatActivity() {
 
@@ -29,11 +31,11 @@ class NewDeliveryActivity : AppCompatActivity() {
                 sldElementI.isEnabled = (it.iaspyx > 0)
                 sldElementB.isEnabled = (it.blierium > 0)
 
-                sldElementZ.valueTo = it.zuscum
-                sldElementWu.valueTo = it.wusnyx
-                sldElementJa.valueTo = it.jasmalt
-                sldElementI.valueTo = it.iaspyx
-                sldElementB.valueTo = it.blierium
+                sldElementZ.valueTo = if(it.zuscum > 0) it.zuscum else 1F
+                sldElementWu.valueTo = if(it.wusnyx > 0) it.wusnyx else 1F
+                sldElementJa.valueTo = if(it.jasmalt > 0) it.jasmalt else 1F
+                sldElementI.valueTo = if(it.iaspyx > 0) it.iaspyx else 1F
+                sldElementB.valueTo = if(it.blierium > 0) it.blierium else 1F
 
                 sldElementZ.value = it.zuscum
                 sldElementWu.value = it.wusnyx
@@ -59,13 +61,22 @@ class NewDeliveryActivity : AppCompatActivity() {
             btnSaveDelivery.setOnClickListener {
                 with(binding){
                     val zuscum = sldElementZ.value
-                    val wusnyx = sldElementZ.value
+                    val wusnyx = sldElementWu.value
                     val jasmalt = sldElementJa.value
                     val iaspyx = sldElementI.value
                     val blierium = sldElementB.value
-                    viewModel.createDelivery(zuscum, wusnyx, jasmalt, iaspyx, blierium)
+                    if(zuscum == 0F &&
+                        wusnyx == 0F &&
+                        jasmalt == 0F &&
+                        iaspyx == 0F &&
+                        blierium == 0F)
+                            Toast.makeText(this@NewDeliveryActivity, getString(R.string.emptyDeliveryError), Toast.LENGTH_SHORT).show()
+                    else{
+                        viewModel.createDelivery(zuscum, wusnyx, jasmalt, iaspyx, blierium)
+                        Toast.makeText(this@NewDeliveryActivity, getString(R.string.deliveryCreation), Toast.LENGTH_SHORT).show()
+                        finish()
+                    }
                 }
-
             }
 
         }

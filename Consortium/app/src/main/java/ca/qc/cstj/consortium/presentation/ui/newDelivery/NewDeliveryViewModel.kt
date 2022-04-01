@@ -33,6 +33,16 @@ class NewDeliveryViewModel(application: Application) : AndroidViewModel(applicat
         val delivery = Delivery(zuscum, wusnyx, jasmalt, iaspyx, blierium)
         viewModelScope.launch {
             deliveryRepository.create(delivery)
+            with(_trader.value!!)
+            {
+                traderRepository.save(name,
+                    this.zuscum - delivery.zuscum,
+                    this.wusnyx - delivery.wusnyx,
+                    this.jasmalt - delivery.jasmalt,
+                    this.iaspyx - delivery.iaspyx,
+                    this.blierium - delivery.blierium)
+            }
+
         }
     }
 }

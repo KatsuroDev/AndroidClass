@@ -10,4 +10,6 @@
     <string name="deliveryTitle">Livraison</string>
     <string name="emptyTraderNameError">Le nom du commerçant ne peut pas être vide</string>
     <string name="deliveryUploadedMessage">Livraisons téléversées</string>
+    <string name="deliveryCreation">Livraison créée!</string>
+    <string name="emptyDeliveryError">La livraison ne peut pas être vide</string>
 </resources>

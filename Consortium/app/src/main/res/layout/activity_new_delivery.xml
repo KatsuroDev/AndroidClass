@@ -40,11 +40,11 @@
         android:id="@+id/sldElementZ"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:valueTo="500"
         app:layout_constraintBottom_toBottomOf="@+id/imvElementZ"
-        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementZ"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/imvElementZ"
-        app:layout_constraintTop_toTopOf="@+id/imvElementZ"
-        android:valueTo="500"/>
+        app:layout_constraintTop_toTopOf="@+id/imvElementZ" />
 
     <TextView
         android:id="@+id/txvAmountElementZ"
@@ -81,7 +81,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imvElementWu"
-        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementWu"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/imvElementWu"
         app:layout_constraintTop_toTopOf="@+id/imvElementWu" />
 
@@ -120,7 +120,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imvElementJa"
-        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementJa"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/imvElementJa"
         app:layout_constraintTop_toTopOf="@+id/imvElementJa" />
 
@@ -159,7 +159,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imvElementI"
-        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementI"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/imvElementI"
         app:layout_constraintTop_toTopOf="@+id/imvElementI" />
 
@@ -198,7 +198,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imvElementB"
-        app:layout_constraintEnd_toStartOf="@+id/txvAmountElementB"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/imvElementB"
         app:layout_constraintTop_toTopOf="@+id/imvElementB" />
 
@@ -223,5 +223,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_baseline_save_24"
         android:focusable="true" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="315dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
